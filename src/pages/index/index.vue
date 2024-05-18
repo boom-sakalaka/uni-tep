@@ -1,3 +1,9 @@
+<route lang="json">
+{
+  "name": "首页",
+  "style": { "navigationBarTitleText": "首页" }
+}
+</route>
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />

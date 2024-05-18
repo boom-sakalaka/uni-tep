@@ -1,0 +1,12 @@
+{
+  "Print to console": {
+    "scope": "javascript,typescript,vue",
+    "prefix": "my-page",
+    "body": [
+      "<route lang=\"json\">{ \"name\": \"${1}\", \"style\": { \"navigationBarTitleText\": \"${1}\" } }</route>",
+      "<template><view></view></template>",
+      "<script setup lang=\"ts\"></script>"
+    ],
+    "description": "创建页面片段成功"
+  }
+}
