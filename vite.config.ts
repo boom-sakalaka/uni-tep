@@ -8,7 +8,9 @@ import AutoImport from "unplugin-auto-import/vite"; /* 自动导入 */
 export default defineConfig({
   plugins: [
     uni(),
-    UniPages(),
+    UniPages({
+      subPackages: ["src/pages-sub"]
+    }),
     AutoImport({
       imports: ["vue", "vue-router"],
       exclude: ["node_modules", "dist"],

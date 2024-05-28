@@ -17,5 +17,15 @@
       }
     }
   ],
-  "subPackages": []
+  "subPackages": [
+    {
+      "root": "pages-sub",
+      "pages": [
+        {
+          "path": "subPages/index",
+          "type": "page"
+        }
+      ]
+    }
+  ]
 }

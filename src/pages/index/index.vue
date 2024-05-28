@@ -6,8 +6,7 @@
 </route>
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
+    <view class="text-area" @click="toSubPages">
       <text class="title">{{ title }}</text>
     </view>
   </view>
@@ -16,6 +15,10 @@
 <script setup lang="ts">
   import { ref } from "vue";
   const title = ref("Hello");
+
+  const toSubPages = () => {
+    uni.navigateTo({ url: "/pages-sub/subPages/index" });
+  };
 </script>
 
 <style scoped lang="scss">
