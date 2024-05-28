@@ -8,7 +8,6 @@
   });
   onHide(() => {
     console.log("App Hide");
-
     // uni.navigateTo({
     //   url: "/pages/home/index"
     // });
