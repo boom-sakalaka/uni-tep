@@ -7,8 +7,10 @@
 <template>
   <view class="content">
     <view class="text-area" @click="toSubPages">
-      <text class="title">{{ title }}</text>
+      <text class="title mt-10">{{ title }}</text>
     </view>
+
+    <button class="btn">Click Me</button>
   </view>
 </template>
 
