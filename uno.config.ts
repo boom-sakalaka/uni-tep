@@ -1,6 +1,12 @@
-// uno.config.ts
-import { defineConfig } from "unocss";
+import presetWeapp from "unocss-preset-weapp";
 
-export default defineConfig({
-  // ...UnoCSS options
-});
+import {
+  transformerClass,
+  transformerAttributify
+} from "unocss-preset-weapp/transformer";
+
+export default {
+  presets: [presetWeapp()],
+  transformers: [transformerAttributify(), transformerClass()],
+  shortcuts: [{ center: "flex items-center justify-center" }]
+};

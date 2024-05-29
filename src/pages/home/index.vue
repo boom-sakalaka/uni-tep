@@ -1,7 +1,18 @@
 <route lang="json">
-{ "name": "", "style": { "navigationBarTitleText": "" } }
+{ "name": "home", "style": { "navigationBarTitleText": "home" } }
 </route>
-<template><view></view></template>
+<template>
+  <z-paging ref="paging" v-model="dataList" @query="queryList">
+    <view class="item" v-for="(item, index) in dataList" :key="index">
+      <view class="item-title">{{ item.title }}</view>
+    </view>
+  </z-paging>
+</template>
 <script setup lang="ts">
-  // const a = ref<number>();
+  const paging = ref();
+  const dataList = ref<{ title: string }[]>([]);
+
+  const queryList = () => {
+    paging.value.complete([{ title: "123" }]);
+  };
 </script>

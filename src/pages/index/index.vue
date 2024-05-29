@@ -17,7 +17,6 @@
 <script setup lang="ts">
   import { ref } from "vue";
   const title = ref("Hello");
-
   const toSubPages = () => {
     uni.navigateTo({ url: "/pages-sub/subPages/index" });
   };

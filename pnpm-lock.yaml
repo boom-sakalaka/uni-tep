@@ -56,6 +56,9 @@ importers:
       vue-i18n:
         specifier: ^9.1.9
         version: 9.13.1(vue@3.4.27(typescript@4.9.5))
+      z-paging:
+        specifier: 2.7.0
+        version: 2.7.0
     devDependencies:
       '@dcloudio/types':
         specifier: ^3.3.2
@@ -147,6 +150,9 @@ importers:
       unocss:
         specifier: ^0.60.3
         version: 0.60.3(postcss@8.4.38)(rollup@3.29.4)(vite@4.3.5(@types/node@20.12.12)(sass@1.77.2)(terser@5.31.0))
+      unocss-preset-weapp:
+        specifier: ^0.60.0
+        version: 0.60.0(rollup@3.29.4)
       unplugin-auto-import:
         specifier: ^0.17.6
         version: 0.17.6(rollup@3.29.4)
@@ -1496,6 +1502,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
+  '@meoc/utils@0.2.8':
+    resolution: {integrity: sha512-SogV9QQpK05CVO3Gz071fRFH/PbbXxCP566VYOs/ux62RTuTbfAVeT8jkiYfzBpg+ImqpKkkK6o6tcbGM0rESQ==}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -2406,6 +2415,9 @@ packages:
   data-view-byte-offset@1.0.0:
     resolution: {integrity: sha512-t/Ygsytq+R995EJ5PZlD4Cu56sWa8InXySaViRzw9apusqsOO2bQP+SbYzAhR0pFKoB+43lYy8rWban9JSuXnA==}
     engines: {node: '>= 0.4'}
+
+  dayjs@1.11.11:
+    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
 
   de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
@@ -4702,6 +4714,9 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
+  unocss-preset-weapp@0.60.0:
+    resolution: {integrity: sha512-Cd045tji88PxKC1ZuOxztlp6juSHtFn+vXyzVm22oR3QaNakRNta3Fz7jn736IS+GinY86V3Ls9eM3hbz+y3Dw==}
+
   unocss@0.60.3:
     resolution: {integrity: sha512-pUBbpgGRKCa6oB/LrGEFBWP2/2E1ZOY8XO7aVJKo2x10rqLS8tGykn1VoBUgbGJsv/8W8tskTVz+RFbCyKP+kA==}
     engines: {node: '>=14'}
@@ -4717,6 +4732,9 @@ packages:
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
+
+  unplugin-attributify-to-class@0.2.5:
+    resolution: {integrity: sha512-0lTUi01mI19PmTTX4420QO6gJFic1wK4LqNnHeBNDrthQEKI0xw/lYg0bGnWYgPmyqXz88hAdLG+ibaypibXqg==}
 
   unplugin-auto-import@0.16.7:
     resolution: {integrity: sha512-w7XmnRlchq6YUFJVFGSvG1T/6j8GrdYN6Em9Wf0Ye+HXgD/22kont+WnuCAA0UaUoxtuvRR1u/mXKy63g/hfqQ==}
@@ -4742,9 +4760,15 @@ packages:
       '@vueuse/core':
         optional: true
 
+  unplugin-transform-class@0.5.3:
+    resolution: {integrity: sha512-4xBvfoeBDqlqi9aD0Hv3TTs8JpRs2h9l8LBMXIRXFNTf8biRk6hAQir+zEM/GpBKoMzvt7JqqbMIYzMazQZysQ==}
+
   unplugin@1.10.1:
     resolution: {integrity: sha512-d6Mhq8RJeGA8UfKCu54Um4lFA0eSaRa3XxdAJg8tIdxbu1ubW0hBCZUL7yI2uGyYCRndvbK8FLHzqy2XKfeMsg==}
     engines: {node: '>=14.0.0'}
+
+  unplugin@1.7.1:
+    resolution: {integrity: sha512-JqzORDAPxxs8ErLV4x+LL7bk5pk3YlcWqpSNsIkAZj972KzFZLClc/ekppahKkOczGkwIG6ElFgdOgOlK4tXZw==}
 
   unquote@1.1.1:
     resolution: {integrity: sha512-vRCqFv6UhXpWxZPyGDh/F3ZpNv8/qo7w6iufLpQg9aKnQ71qM4B5KiI7Mia9COcjEhrO9LueHpMYjYzsWH3OIg==}
@@ -5011,6 +5035,10 @@ packages:
   yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+
+  z-paging@2.7.0:
+    resolution: {integrity: sha512-TNQfHCEfywk8Yz1KSwHeiQeqSXNhQq1bxLbTGfWU6SeKYxBvaXx1nAo9S2VldrUJ+YTk1t/ivG/uvVxvgZQgOQ==}
+    engines: {HBuilderX: ^3.0.7}
 
 snapshots:
 
@@ -7134,6 +7162,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
+  '@meoc/utils@0.2.8':
+    dependencies:
+      dayjs: 1.11.11
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -8313,6 +8345,8 @@ snapshots:
       call-bind: 1.0.7
       es-errors: 1.3.0
       is-data-view: 1.0.1
+
+  dayjs@1.11.11: {}
 
   de-indent@1.0.2: {}
 
@@ -10979,6 +11013,17 @@ snapshots:
 
   universalify@2.0.1: {}
 
+  unocss-preset-weapp@0.60.0(rollup@3.29.4):
+    dependencies:
+      '@rollup/pluginutils': 5.1.0(rollup@3.29.4)
+      '@unocss/core': 0.60.3
+      '@unocss/extractor-arbitrary-variants': 0.60.3
+      '@unocss/rule-utils': 0.60.3
+      unplugin-attributify-to-class: 0.2.5(rollup@3.29.4)
+      unplugin-transform-class: 0.5.3(rollup@3.29.4)
+    transitivePeerDependencies:
+      - rollup
+
   unocss@0.60.3(postcss@8.4.38)(rollup@3.29.4)(vite@4.3.5(@types/node@20.12.12)(sass@1.77.2)(terser@5.31.0)):
     dependencies:
       '@unocss/astro': 0.60.3(rollup@3.29.4)(vite@4.3.5(@types/node@20.12.12)(sass@1.77.2)(terser@5.31.0))
@@ -11010,6 +11055,14 @@ snapshots:
 
   unpipe@1.0.0: {}
 
+  unplugin-attributify-to-class@0.2.5(rollup@3.29.4):
+    dependencies:
+      '@rollup/pluginutils': 5.1.0(rollup@3.29.4)
+      unplugin: 1.10.1
+      unplugin-transform-class: 0.5.3(rollup@3.29.4)
+    transitivePeerDependencies:
+      - rollup
+
   unplugin-auto-import@0.16.7(rollup@3.29.4):
     dependencies:
       '@antfu/utils': 0.7.8
@@ -11036,7 +11089,22 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
+  unplugin-transform-class@0.5.3(rollup@3.29.4):
+    dependencies:
+      '@meoc/utils': 0.2.8
+      '@rollup/pluginutils': 5.1.0(rollup@3.29.4)
+      unplugin: 1.7.1
+    transitivePeerDependencies:
+      - rollup
+
   unplugin@1.10.1:
+    dependencies:
+      acorn: 8.11.3
+      chokidar: 3.6.0
+      webpack-sources: 3.2.3
+      webpack-virtual-modules: 0.6.1
+
+  unplugin@1.7.1:
     dependencies:
       acorn: 8.11.3
       chokidar: 3.6.0
@@ -11286,3 +11354,5 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yocto-queue@1.0.0: {}
+
+  z-paging@2.7.0: {}
