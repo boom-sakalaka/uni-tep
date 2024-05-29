@@ -7,3 +7,7 @@ https://junki.cn/frontend/18_Vue3_CodeFormat.html#_2-5-%E5%BC%80%E5%8F%91%E5%B7%
 https://juejin.cn/post/7007603848080523278 .eslintignore
 
 ### uni-app 和 unocss 冲突 https://github.com/dcloudio/uni-app/issues/4815
+
+#### unocss 解决小程序 不识别 \: 等特殊字符打包报错 https://github.com/MellowCo/unocss-preset-weapp
+
+#### z-paging 文档 https://z-paging.com/start/intro.html
