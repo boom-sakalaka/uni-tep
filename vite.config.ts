@@ -17,6 +17,7 @@ export default defineConfig(async () => {
         imports: ["vue", "vue-router"],
         exclude: ["node_modules", "dist"],
         // dirs: ['src/composables', 'src/hooks'], /* 指定一个或多个目录，插件会扫描这些目录中的文件，自动导入这些文件中导出的模块。 */
+        dirs: ["./src/store/modules", "./src/composables"],
         eslintrc: {
           enabled: true,
           filepath: "./.eslintrc-auto-import.json",
