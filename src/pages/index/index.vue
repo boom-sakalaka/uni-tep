@@ -6,16 +6,18 @@
 </route>
 <template>
   <view class="content">
-    <view class="text-area" @click="toSubPages">
+    <view class="text-area">
       <text class="title mt-10">{{ title }}</text>
     </view>
 
-    <button class="btn">Click Me</button>
+    <button class="btn" @click="toSubPages">去分包页面</button>
   </view>
 </template>
 
 <script setup lang="ts">
   import { ref } from "vue";
+  const userStore = useUserStore();
+  console.warn(userStore._storage.a);
   const title = ref("Hello");
   const toSubPages = () => {
     uni.navigateTo({ url: "/pages-sub/subPages/index" });

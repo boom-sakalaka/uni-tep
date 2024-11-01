@@ -5,7 +5,7 @@ import { storageKey } from "../utils";
 export const useUserStore = defineStore(
   USER_STORE_KEY,
   () => {
-    const _storage = ref({});
+    const _storage = ref({ a: 1 });
 
     return {
       _storage
